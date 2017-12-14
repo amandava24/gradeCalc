@@ -1,0 +1,47 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Grade</title>
+    <link rel="stylesheet" href="sheet.css"/>
+    <script src ="script.js"></script>
+</head>
+<body>
+<h1>Graderator</h1>
+<table border="1" cellspacing="0" cellpadding="10" align="center">
+    <tr class="hwC">
+        <td><textarea rows="4" cols="25" id="homework">98, 99, 100</textarea><br>Homework</td>
+
+        <td><textarea rows="4" cols="25" id="homeworkW">25</textarea><br>Homework Weight</td>
+    </tr>
+    <tr class="quizzesC">
+        <td><textarea rows="4" cols="25" id="quizzes">88, 85, 92</textarea><br>Quizzes</td>
+
+        <td><textarea rows="4" cols="25" id="quizzesW">10</textarea><br>Quizzes Weight</td>
+    </tr>
+    <tr class="testsC">
+        <td><textarea rows="4" cols="25" id="tests">80, 74, 75</textarea><br>Tests</td>
+
+        <td><textarea rows="4" cols="25" id="testsW">25</textarea><br>Tests Weight</td>
+    </tr>
+    <tr class="midtermsC">
+        <td><textarea rows="4" cols="25" id="midterms">69, 68, 66</textarea><br>Midterms</td>
+
+        <td><textarea rows="4" cols="25" id="midtermsW">20</textarea><br>Midterms Weight</td>
+    </tr>
+    <tr>
+        <td><input type=text id="gradeWanted" value="90">%</input>
+            <p>Semester Grade Desired</p></td>
+        <td><textarea rows="4" cols="25" id="finalW">20</textarea><br>Final Grade Weight</td>
+    </tr>
+
+</table>
+<p></p>
+<button id="button" onclick="submit()">Calculate Grade</button>
+
+<div id="weight"></div>
+<p id="grade"></p>
+<p id="final"></p>
+<div id="output"></div>
+
+</body>
+</html>
